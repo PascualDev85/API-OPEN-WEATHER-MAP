@@ -1,0 +1,59 @@
+.box-week {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 95vw;
+    margin: 2rem auto;
+    background-color: rgba(255, 255, 255, 0.377);
+    border-radius: 8px;
+    .box-week-detail {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+        display: block;
+        border-right: 1px solid rgba(255, 255, 255, 0.377);
+        margin: 2rem 0;
+        .pDay {
+            font-size: 25px;
+        }
+        .iconosTiempo2 {
+            margin-bottom: 1rem;
+        }
+        .box-humidity {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 10rem;
+            font-size: 18px;
+            line-height: 2;
+            .humidity {
+                margin-right: 5px;
+                width: 25px;
+                filter: invert(100%);
+            }
+            .humidity2 {
+                margin-left: -30px;
+            }
+            .humidity3 {
+                margin-right: 9px;
+            }
+        }
+        
+        .tempMaxMix {
+            margin-left: -8px; 
+        }
+    }
+
+}
+
+// __________________________ MEDIA QUERY _____________________________
+@media (min-width: 451px) and (max-width: 850px) {
+    .box-week {
+    width: 85vw;
+    }
+}
+@media screen and (min-width: 851px) {
+    .box-week {
+    width: 35vw;
+    }
+}
