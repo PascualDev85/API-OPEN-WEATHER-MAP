@@ -42,6 +42,16 @@ export const WeatherForm = ({
             value={city}
             onKeyPress={searchCity}
           />
+          {weather === "" && (
+            <p className="message">
+              Permite la localización para una mejor experiencia.
+            </p>
+          )}
+          {weather.cod === "404" && (
+            <p className="message">
+              El nombre de la ciudad no existe, por favor introduzca una nueva.
+            </p>
+          )}
         </div>
         {weather.city != null && (
           <>

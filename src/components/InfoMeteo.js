@@ -7,7 +7,7 @@ import { WeatherWeek } from "./weatherForm/WeatherWeek";
 
 export const InfoMeteo = () => {
   const [city, setCity] = useState("");
-  const [weather, setWeather] = useState({});
+  const [weather, setWeather] = useState("");
   const [masInfo, setMasInfo] = useState(false);
 
   const geocalition = useEffect(() => {
