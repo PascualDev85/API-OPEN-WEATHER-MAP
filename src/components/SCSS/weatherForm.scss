@@ -123,9 +123,6 @@ main {
 }
 .app {
     font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     color: rgb(255, 255, 255);
     text-align: center;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))),url('../../assets/bg-day.jpg');
@@ -134,7 +131,13 @@ main {
     background-position: center;  
 }
 .warm {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))),url('../../assets/bg-night.jpg');
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))),url('../../assets/bg-night.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -144,7 +147,7 @@ main {
 
 @media (min-width: 451px) and (max-width: 850px) {
     .search-input {
-        width: 60% !important;
+        width: 87% !important;
     }
     .box-weather {
         width: 85% !important;
@@ -158,12 +161,12 @@ main {
             margin-right: 40px;
         }
         .box-max-min {
-            text-align: left !important;
-            margin: -15px 190px !important;
+            text-align: center !important;
+            margin-left: -75px !important;
         }
     }
     .box-details {
-        width: 89% !important;
+        width: 92% !important;
         margin: 0 auto !important;
         justify-content: center !important;
         .box-details-3  {
@@ -173,13 +176,62 @@ main {
     
     }
     .box-details-sun {
-        width: 92% !important;
+        width: 90% !important;
         margin: 15px auto 0 auto !important;
         .boxPlus {
             .plus {
                 padding: 6px !important;
-                width: 20% !important;
-                height: 20% !important;
+                width: 26% !important;
+                height: 26% !important;
+            }
+            .menos {
+                padding: 6px !important;
+                width: 60% !important;
+                height: 60% !important;
+            }
+        }
+    }
+}
+@media (min-width: 851px) and (max-width:1850px) {
+    .search-box {
+        .search-input {
+            width: 50% !important;
+        }
+    }
+    .box-weather {
+        width: 70% !important;
+        .city-name-country {
+            font-size: 55px !important;
+        }
+        .box-temp-icon {
+            justify-content: center !important;
+        }
+        .temDay {
+            margin-right: 40px;
+        }
+        .box-max-min {
+            text-align: center !important;
+            margin-left: -70px !important;
+        }
+    }
+    .box-details {
+        width: 74vw !important;
+        margin: 0 auto !important;
+        justify-content: center !important;
+        .box-details-3  {
+            width: 30% !important;
+            margin: 0 18px !important;
+        }
+    
+    }
+    .box-details-sun {
+        width: 75% !important;
+        margin: 15px auto 0 auto !important;
+        .boxPlus {
+            .plus {
+                padding: 6px !important;
+                width: 11% !important;
+                height: 11% !important;
             }
             .menos {
                 padding: 6px !important;
@@ -189,7 +241,9 @@ main {
         }
     }
 }
-@media screen and (min-width: 851px) {
+    
+
+@media screen and (min-width: 1851px) {
     .search-box {
         .search-input {
             width: 30% !important;
@@ -208,11 +262,11 @@ main {
         }
         .box-max-min {
             text-align: left !important;
-            margin: -15px 305px !important;
+            margin: -15px 410px !important;
         }
     }
     .box-details {
-        width: 60% !important;
+        width: 58.5vw !important;
         margin: 0 auto !important;
         justify-content: center !important;
         .box-details-3  {
@@ -224,11 +278,21 @@ main {
     .box-details-sun {
         width: 63% !important;
         margin: 15px auto 0 auto !important;
+        .box-details-sun2 {
+            justify-content: baseline !important;
+            .sunrise {
+                width: 20% !important;
+            }
+            .sunriseAM {
+                margin-left: -100px !important;
+            }
+          
+        }
         .boxPlus {
             .plus {
                 padding: 6px !important;
-                width: 15% !important;
-                height: 15% !important;
+                width: 11% !important;
+                height: 11% !important;
             }
             .menos {
                 padding: 6px !important;

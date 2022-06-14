@@ -21,9 +21,6 @@ export const WeatherForm = ({
   masInfo,
   setMasInfo,
 }) => {
-  console.log(weather);
-  console.log(masInfo);
-
   return (
     <div
       className={
@@ -100,7 +97,7 @@ export const WeatherForm = ({
             <div className="box-details-sun">
               <div className="box-details-sun2">
                 <img className="sunrise" src={sunrise} alt="sunrise" />
-                <span>
+                <span className="sunriseAM">
                   {moment.unix(weather.list[0].sunrise).format("HH:mm")} AM
                 </span>
               </div>
@@ -118,7 +115,7 @@ export const WeatherForm = ({
               </div>
 
               <div className="box-details-sun2">
-                <span>
+                <span lassName="sunriseAM">
                   {moment.unix(weather.list[0].sunset).format("HH:mm")} PM
                 </span>
                 <img className="sunrise" src={sunset} alt="sunset" />

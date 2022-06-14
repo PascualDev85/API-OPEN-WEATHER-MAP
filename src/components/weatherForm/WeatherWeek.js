@@ -8,7 +8,7 @@ import wind from "../../assets/wind.svg";
 import temp from "../../assets/temp.png";
 import "../SCSS/weatherWeek.scss";
 
-export const WeatherWeek = ({ masInfo, weather }) => {
+export const WeatherWeek = ({ weather }) => {
   return (
     <div className="box-week">
       {weather
